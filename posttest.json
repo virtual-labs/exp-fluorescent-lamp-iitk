@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1.The light of fluorescent tube appears cooler than that from an incandescent lamp. This is due to the fact that",
+      "answers": {
+        "a": "The tube consumes less power",
+        "b": "Surface area of tube is larger than that of the incandescent lamp",
+        "c": "Tungsten is not used in the tube",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Fluorescent lamp (electric discharge lamp) is cooler and more efficient than incandescent lamps that produces light by the fluorescence of a phosphor coating. The reason behind this is the tube consumes less power. <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. _______ method is used to start the discharge process of fluorescent tube.",
+      "answers": {
+        "a": "Thermal Starter",
+        "b": "Quick/Instant start",
+        "c": "Glow Start",
+        "d": "All are correct"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "all these method is used to start the discharge process of fluorescent tube."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+      },
+    {
+      "question": "3.Which of the following lamp employs a bimetallic strip?",
+      "answers": {
+        "a": "Sodium vapor",
+        "b": "Fluroscent lamp",
+        "c": "Incandescent lamp",
+        "d": "Mercury vapor lamp"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "when we switch ON the supply, gas inside the starter gets ionized due to this full voltage and heats the bimetallic strip. That causes to bend the bimetallic strip to connect to the fixed contact. Now current start flowing through startor.",
+        "c": "Explanation 2",
+        "d": "all these method is used to start the discharge process of fluorescent tube."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+     },
+    {
+      "question": "4.The efficiency of a fluorescent lamp is________.",
+      "answers": {
+        "a": "50 lumens per watt",
+        "b": "25 lumens per watt",
+        "c": "50 to 100 lumens per watt",
+        "d": "100 to 120 lumens per watt"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "A fluorescent bulb produces less heat, so it is much more efficient. A fluorescent bulb can produce between 50 and 100 lumens per watt. This makes fluorescent bulbs four to six times more efficient than incandescent bulbs.",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

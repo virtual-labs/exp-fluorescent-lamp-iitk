@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1.How starter and choke coil are connected with the fluorescent lamp in single phase circuit?",
+      "answers": {
+        "a": "Series and parallel",
+        "b": "Series and series",
+        "c": "Parallel and parallel",
+        "d": "Parallel and series"
+      },
+      "explanations": {
+        "a": " A starter is actually a capacitor connected in parallel with a fluorescent lamp. To strike the lamp a sudden spark  of current discharge is required in the tube and the choke coil is connected in series with tube filament which provide a voltage impulse for starting the lamp.  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2.Which gas is used in the fluorescent lamp?",
+      "answers": {
+        "a": "Argon",
+        "b": "Neon",
+        "c": "Hydrogen",
+        "d": "Helium"
+      },
+      "explanations": {
+        "a": "Argon belongs to zero group, i.e., is a noble gas and thus is inert. Hence it will not react with the hot filaments. Hence it is used in fluorescent and incandescent light bulbs to stop the oxygen in the light bulbs from corroding the hot tungsten filament.  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+      },
+    {
+      "question": "3.What is the use choke coil in the fluorescent lamp (tube light) circuit?",
+      "answers": {
+        "a": "Increases the current in the fluorescent lamp.",
+        "b": "Increases the voltage in the fluorescent lamp.",
+        "c": "Decreases the voltage in the fluorescent lamp.",
+        "d": "Decreases the current in the fluorescent lamp."
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Choke is nothing but the coil/ballast ( inductor) which is used to induce the high voltage across it. As we know that inductor has the property to induce high voltage for a brief period of time, this high voltage is required to ionize the gases in the starter.",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+      },
+    {
+      "question": "4.How to calculate the power factor of any single-phase circuit?",
+      "answers": {
+        "a": "PF= Wattmeter Reading / (Voltmeter Reading× Ammeter Reading).",
+        "b": "PF= (Voltmeter Reading× Ammeter Reading)/ Wattmeter Reading).",
+        "c": "PF= Ammeter Reading/ (Voltmeter Reading× Wattmeter Reading).",
+        "d": "PF= voltmeter Reading/ (Wattmeter Reading× Ammeter Reading)."
+      },
+      "explanations": {
+        "a": " Power Formula in Single Phase AC Circuits P = V x I x CosФ. Here P is the wattmeter reading, V is voltmeter reading, I is ammeter reading and cosФ is power factor. <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
