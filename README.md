@@ -1,24 +1,24 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>	Basic Electrical Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Electrical Engineering Lab
+<b> Experiment|     <b> Connection and measurement of power consumption of a fluorescent lamp (tube light)
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+Fluorescent lamp constitutes a glass tube whose inside is coated with a fluorescent powder. When the two filaments of the lamp are maintained at potential difference sufficient enough t produce electric discharge through the gap, then electron are emitted from one electrode and move towards the other electrodes. In the mean time, these electrons collide with the fluorescent coating and emit cool light. In most fluorescent lamp, a mixture of argon and mercury gas contained in a glass tube is stimulated by an electric current, producing ultraviolet ray. These rays strike fluorescent phosphorous coating on the interior surface of the bulb. Unfortunately a fluorescent lamp can t just work as is case of incandescent lamp. The main reason is that it is normally takes a voltage greater than the typical line voltage to start. It requires several hundreds of volts ( v).
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Dr. Ashutosh Tiwari 
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute |Rajkiya Engineering College Banda <b>  
+<b> Email id|  ashutosh.tiwari@recbanda.ac.in   <b>  
+<b> Department | Mechanical Engineering 
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 | Kajal Yadav | Student |Electrical Engineering |Rajkiya Engineering College Banda | ykajal2002@gmail.com
+
