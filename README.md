@@ -14,7 +14,7 @@ Fluorescent lamp constitutes a glass tube whose inside is coated with a fluoresc
 :--|:--|
 <b> Institute |Rajkiya Engineering College Banda <b>  
 <b> Email id|  ashutosh.tiwari@recbanda.ac.in   <b>  
-<b> Department | Mechanical Engineering 
+<b> Department | Applied Science and Humanities 
 
 ### Contributors List
 
