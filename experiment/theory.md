@@ -17,7 +17,7 @@ length of the commonly used fluorescent tube is 100 cm; its power rating is near
 230V and 50 Hz. The tube is filled with argon and a drop of mercury. When the supply is
 switched on, the current heats the filaments and initiates emission of electrons. After one
 or two seconds, the starter circuit opens and makes the choke to induce a momentary
-high voltage surge across the two filaments<br><br>
+high voltage surge across the two filaments : <br><br>
 
 **Starter**: Special kind of switch that consists of a small gas-discharge tube, containing
 neon or argon in parallel with a normally open bi-metallic switch. It is connected in parallel
@@ -37,7 +37,7 @@ circuited.<br><br>
 
 Circuit diagram shown below is the connection diagram of a fluorescent lamp, starter and
 choke coil. In this circuit when the 1-phase supply is applied then the measurement of
-power consumption of fluorescent lamp is done with the help of wattmeter. Finally with the help of wattmeter, ammeter and voltmeter the power factor of circuit is calculated
+power consumption of fluorescent lamp is done with the help of wattmeter. Finally with the help of wattmeter, ammeter and voltmeter the power factor of circuit is calculated.
 
 
 
