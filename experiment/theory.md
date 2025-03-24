@@ -1,6 +1,6 @@
 Fluorescent lamp constitutes a glass tube whose inside is coated with
 a fluorescent powder. When the two filaments of the lamp are maintained at potential
-difference sufficient enough t produce electric discharge through the gap, then
+difference sufficient enough to produce electric discharge through the gap, then
 electron are emitted from one electrode and move towards the other electrodes. In
 the mean time, these electrons collide with the fluorescent coating and emit cool
 light. In most fluorescent lamp, a mixture of argon and mercury gas contained in a
@@ -8,7 +8,7 @@ glass tube is stimulated by an electric current, producing ultraviolet ray. Thes
 strike fluorescent phosphorous coating on the interior surface of the bulb.
 Unfortunately a fluorescent lamp can t just work as is case of incandescent lamp.
 The main reason is that it is normally takes a voltage greater than the typical line
-voltage to start. It requires several hundreds of volts ( v).<br><br>
+voltage to start. It requires several hundreds of volts (V).<br><br>
 
 
 A fluorescent lamp is a sealed glass tube with two electrodes at its two ends. The
