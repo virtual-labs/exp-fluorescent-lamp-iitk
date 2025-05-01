@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Graph</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    </head>
+    <body>
+    
+            <header>
+                <nav class="main-nav flex">
+                    <button class="navbar-toggler" type="button" onclick="toggle()">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="d-flex justify-content-center">        
+                        <a href="https://vlab.co.in" class="navbar-brand">
+                            <img src="/VirtualLab/src/vlab_icon1.jpg" alt="vlabs logo" class="vlabs-logo"  >
+                        </a>
+                    </div>
+        
+                    
+                    <div style="margin-left: auto">
+                        <ul class="nav-menu flex">
+                            <li class="menu-item">
+                                <a href="https://vlab.co.in">HOME</a>
+                            
+                            <li class="menu-item">
+                                <a href="https://vlab.co.in/participating-institutes">PARTNERS</a>
+                            
+                            <li class="menu-item">
+                                <a href="https://vlab.co.in/contact-us">CONTACT</a>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="tableContainer">
+            <h2 style="text-align: center;background-color: #634380;font-weight: bolder;padding: 2px 0 2px 0;
+    		margin-top:30px;color: white">
+            FLUORESCENT LAMP SIMULATION</h2>
+
+    
+      <label for="power">Power (W):</label>
+      <select id="power">
+        <option value="12.5">12.5</option>
+        <option value="25">25</option>
+      </select>
+    
+      <label for="voltage">Voltage (V):</label>
+      <select id="voltage">
+        <option value="110">110</option>
+        <option value="120">120</option>
+        <option value="150">150</option>
+        <option value="220">220</option>
+        <option value="240">240</option>
+      </select>
+    
+      <span class="toggle" onclick="togglePowerFactor()">Power Factor: <span id="pfDisplay">2</span></span>
+    
+      <button class="tableButton" onclick="addReading()"><pre>Add Reading</pre> </button>
+ 
+      <label for="graphSelect">Graph Type:</label>
+      <select id="graphSelect" onchange="drawGraph()">
+        <option value="pv">Power vs Voltage</option>
+        <option value="vc">Voltage vs Current</option>
+      </select>
+      <a href="index.html"><button  class="tableButton" >Back</button></a>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Power (W)</th>
+            <th>Voltage (V)</th>
+            <th>Power Factor</th>
+            <th>Current (A)</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    
+      <div class="graph-container">
+        <canvas id="graphCanvas" width="600" height="350"></canvas>
+      </div>
+    </div>
+    <div class="container"><h1 style="font-size: medium;">Circuit Diagram :</h1>
+        <div class="picture-section">
+          <img src="images/Screenshot 2025-03-27 111339.png" alt="Displayed Picture">
+        </div>
+      </div>
+      <script>
+        let powerFactor = 2;
+        const maxReadings = 5;
+        const readings = [];
+    
+        function togglePowerFactor() {
+          powerFactor = (powerFactor === 2) ? 4 : 2;
+          document.getElementById("pfDisplay").textContent = powerFactor;
+        }
+    
+        function addReading() {
+          const power = parseFloat(document.getElementById("power").value);
+          const voltage = parseFloat(document.getElementById("voltage").value);
+          const current = power / (voltage * powerFactor);
+    
+          const entry = { power, voltage, powerFactor, current: current.toFixed(3) };
+    
+          if (readings.length >= maxReadings) readings.shift();
+          readings.push(entry);
+    
+          updateTable();
+          drawGraph();
+        }
+    
+        function updateTable() {
+          const tbody = document.getElementById("tableBody");
+          tbody.innerHTML = "";
+          readings.forEach((r, i) => {
+            const row = `<tr>
+              <td>${i + 1}</td>
+              <td>${r.power}</td>
+              <td>${r.voltage}</td>
+              <td>${r.powerFactor}</td>
+              <td>${r.current}</td>
+            </tr>`;
+            tbody.innerHTML += row;
+          });
+        }
+    
+        function drawGraph() {
+          const canvas = document.getElementById("graphCanvas");
+          const ctx = canvas.getContext("2d");
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+          const padding = 50;
+          const width = canvas.width;
+          const height = canvas.height;
+          const chartWidth = width - 2 * padding;
+          const chartHeight = height - 2 * padding;
+    
+          const graphType = document.getElementById("graphSelect").value;
+    
+          let xLabel = "", yLabel = "";
+          let xData = [], yData = [];
+    
+          if (graphType === "pv") {
+            xLabel = "Voltage (V)";
+            yLabel = "Power (W)";
+            xData = readings.map(r => r.voltage);
+            yData = readings.map(r => r.power);
+          } else {
+            xLabel = "Voltage (V)";
+            yLabel = "Current (A)";
+            xData = readings.map(r => r.voltage);
+            yData = readings.map(r => parseFloat(r.current));
+          }
+    
+          const voltageOptions = [110, 120, 150, 220, 240];
+          const selectedVoltage = parseFloat(document.getElementById("voltage").value);
+          const minX = 110;  // Start X-axis from 110
+          const maxX = selectedVoltage;  // Set max value as the selected voltage
+    
+          const maxY = Math.max(...yData);
+    
+          const scaleX = chartWidth / (maxX - minX || 1);
+          const scaleY = chartHeight / (maxY || 1);
+    
+          // Draw axes
+          ctx.beginPath();
+          ctx.moveTo(padding, padding);
+          ctx.lineTo(padding, height - padding);
+          ctx.lineTo(width - padding, height - padding);
+          ctx.strokeStyle = "#000";
+          ctx.stroke();
+    
+          // Draw axis labels
+          ctx.save();
+          ctx.translate(padding - 35, height / 2);
+          ctx.rotate(-Math.PI / 2);
+          ctx.textAlign = "center";
+          ctx.font = "14px Arial";
+          ctx.fillText(yLabel, 0, 0);
+          ctx.restore();
+    
+          ctx.font = "14px Arial";
+          ctx.textAlign = "center";
+          ctx.fillText(xLabel, width / 2, height - 10);
+    
+          // Draw custom ticks on X-axis (110, 120, 150, 220, 240)
+          voltageOptions.forEach(voltage => {
+            const xPos = padding + (voltage - minX) * scaleX;
+            ctx.beginPath();
+            ctx.moveTo(xPos, height - padding);
+            ctx.lineTo(xPos, height - padding + 5);
+            ctx.strokeStyle = "#000";
+            ctx.stroke();
+            ctx.fillText(voltage, xPos, height - padding + 15);
+          });
+    
+          // Draw ticks on Y-axis
+          for (let i = 0; i <= 5; i++) {
+            const yPos = height - padding - (i * chartHeight) / 5;
+            ctx.beginPath();
+            ctx.moveTo(padding - 5, yPos);
+            ctx.lineTo(padding, yPos);
+            ctx.strokeStyle = "#000";
+            ctx.stroke();
+            ctx.fillText((maxY * (i / 5)).toFixed(2), padding - 30, yPos + 5);
+          }
+    
+          // Draw dots and connect them with a line
+          ctx.beginPath();
+          xData.forEach((x, i) => {
+            const xPos = padding + (x - minX) * scaleX;
+            const yPos = height - padding - yData[i] * scaleY;
+    
+            if (i === 0) {
+              ctx.moveTo(xPos, yPos);
+            } else {
+              ctx.lineTo(xPos, yPos);
+            }
+    
+            // Draw dots
+            ctx.arc(xPos, yPos, 4, 0, Math.PI * 2, true);
+            ctx.fillStyle = "#FF5733";
+            ctx.fill();
+          });
+    
+          ctx.strokeStyle = "#007BFF";
+          ctx.lineWidth = 2;
+          ctx.stroke();
+        }
+      </script>
+    </body>
+    </html>
+    

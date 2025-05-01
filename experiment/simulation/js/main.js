@@ -34,10 +34,15 @@ function power(){
 
 
 function showTube(){
+    const lamp = document.getElementById('lamp');
+
     if(count==1){
         //code svg image of tube here
         // document.getElementById("lamp").innerHTML.style.visibility="visible";
         //
+
+        lamp.style.visibility = "visible";
+
         document.getElementById("steps").innerHTML="Instructions : Click on Starter Button"
         starterButton.disabled=false;
         count+=1
@@ -45,10 +50,11 @@ function showTube(){
 }
 
 function showStarter(){
+    const starter = document.getElementById('starter');
     if(count==2){
         //code svg image of starter here
         // document.getElementById("starter").innerHTML.style.visibility="visible";
-
+        starter.style.visibility = 'visible';
         //
         document.getElementById("steps").innerHTML="Instructions : Click on Choke Button"
         chokeButton.disabled=false;
@@ -136,3 +142,6 @@ function valueOfFactor2(){
     document.getElementById("steps").innerHTML="Instructions : Note the Result"
     document.getElementById("result").innerHTML="Wattmeter Reading : 12.5 Watts"
 }
+
+
+
