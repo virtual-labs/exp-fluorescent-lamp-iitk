@@ -28,11 +28,11 @@
       },
       "explanations": {
         "a": "Argon belongs to zero group, i.e., is a noble gas and thus is inert. Hence it will not react with the hot filaments. Hence it is used in fluorescent and incandescent light bulbs to stop the oxygen in the light bulbs from corroding the hot tungsten filament.  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
+        "b": "Neon belongs to zero group, i.e., is a noble gas and thus is inert. Hence it will not react with the hot filaments. Hence it is used in fluorescent and incandescent light bulbs to stop the oxygen in the light bulbs from corroding the hot tungsten filament.  <a href='www.google.com'>here</a>",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "a,b",
       "difficulty": "beginner"
       },
     {
