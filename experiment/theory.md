@@ -40,4 +40,4 @@ choke coil. In this circuit when the 1-phase supply is applied then the measurem
 power consumption of fluorescent lamp is done with the help of wattmeter. Finally with the help of wattmeter, ammeter and voltmeter the power factor of circuit is calculated<br>
 <center>Circuit diagram shown in figure 1 :<br><br>
 <img src="./simulation/images/Screenshot 2025-03-27 111339.png">
-<pre>                                              Figure 1
+<div align="center">figure 1</div>
