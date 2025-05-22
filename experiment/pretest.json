@@ -32,7 +32,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a,b",
+      "correctAnswer": ["a", "b"],
       "difficulty": "beginner"
       },
     {
