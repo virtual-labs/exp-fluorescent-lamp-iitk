@@ -22,5 +22,5 @@ SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Kajal Yadav | Student |Electrical Engineering |Rajkiya Engineering College Banda | ykajal2002@gmail.com
 2 | Kshtiz Rastogi  | Student |Electrical Engineering |Rajkiya Engineering College Banda | 2307340130026@recbanda.ac.in
-3 | Rahul Gautam  | Student |Electrical Engineering |Rajkiya Engineering College Banda | 
+3 | Rahul Gautam  | Student |Electrical Engineering |Rajkiya Engineering College Banda | 2307340130038@recbanda.ac.in
 
