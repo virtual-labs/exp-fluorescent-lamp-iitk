@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1.How starter and choke coil are connected with the fluorescent lamp in single phase circuit?",
+      "question": "1. How starter and choke coil are connected with the fluorescent lamp in single phase circuit?",
       "answers": {
         "a": "Series and parallel",
         "b": "Series and series",
@@ -10,7 +10,7 @@
         "d": "Parallel and series"
       },
       "explanations": {
-        "a": "2.A starter is actually a capacitor connected in parallel with a fluorescent lamp. To strike the lamp a sudden spark  of current discharge is required in the tube and the choke coil is connected in series with tube filament which provide a voltage impulse for starting the lamp.",
+        "a": "A starter is actually a capacitor connected in parallel with a fluorescent lamp. To strike the lamp a sudden spark  of current discharge is required in the tube and the choke coil is connected in series with tube filament which provide a voltage impulse for starting the lamp.",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
    {
-      "question": "3.Which gas is used in the fluorescent lamp?",
+      "question": "2. Which gas is used in the fluorescent lamp?",
       "answers": {
         "a": "Argon and Neon",
         "b": "Oxygen and Florine",
@@ -36,7 +36,7 @@
       "difficulty": "beginner"
       },
     {
-      "question": "4.What is the use choke coil in the fluorescent lamp (tube light) circuit?",
+      "question": "3. What is the use choke coil in the fluorescent lamp (tube light) circuit?",
       "answers": {
         "a": "Increases the current in the fluorescent lamp.",
         "b": "Increases the voltage in the fluorescent lamp.",
@@ -53,7 +53,7 @@
       "difficulty": "beginner"
       },
     {
-      "question": "5.How to calculate the power factor of any single-phase circuit?",
+      "question": "4. How to calculate the power factor of any single-phase circuit?",
       "answers": {
         "a": "PF= Wattmeter Reading / (Voltmeter Reading× Ammeter Reading).",
         "b": "PF= (Voltmeter Reading× Ammeter Reading)/ Wattmeter Reading).",
@@ -61,7 +61,7 @@
         "d": "PF= voltmeter Reading/ (Wattmeter Reading× Ammeter Reading)."
       },
       "explanations": {
-        "a": " Power Formula in Single Phase AC Circuits P = V x I x CosФ. Here P is the wattmeter reading, V is voltmeter reading, I is ammeter reading and cosФ is power factor.",
+        "a": "Power Formula in Single Phase AC Circuits P = V x I x CosФ. Here P is the wattmeter reading, V is voltmeter reading, I is ammeter reading and cosФ is power factor.",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
