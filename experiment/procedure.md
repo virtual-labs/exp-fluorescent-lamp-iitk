@@ -11,7 +11,7 @@
 
 
 <center>Circuit diagram  shown in figure 1:<br><br></center>.
-<center><img src="./simulation/images/Screenshot 2025-03-27 111339.png"></center><br>
+<img src="simulation/images/Screenshot 2025-03-27 111339.png"><br>
 
 <div align="center">figure 1</div>
 
